@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  font-family: 'Inter', sans-serif;
 }
 
 .App-logo {
@@ -35,4 +35,85 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Custom transition styles */
+.transition-colors {
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.duration-2000 {
+  transition-duration: 2000ms;
+}
+
+.bg-gray-100 {
+  background-color: #f3f4f6;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-emerald-50 {
+  background-color: #ecfdf5;
+}
+
+.text-emerald-700 {
+  color: #047857;
+}
+
+.text-gray-800 {
+  color: #1f2937;
+}
+
+.text-gray-900 {
+  color: #111827;
+}
+
+/* Animation for new rows */
+@keyframes pulse {
+  0%, 100% {
+    background-color: #ecfdf5;
+  }
+  50% {
+    background-color: #d1fae5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Border highlight effects */
+.border-emerald-500 {
+  border-color: #10b981;
+}
+
+.border-l-4 {
+  border-left-width: 4px;
+}
+
+/* Ring styles for status badges */
+.ring-2 {
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 0 2px rgba(16, 185, 129, 0.5);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.ring-emerald-500 {
+  --tw-ring-color: #10b981;
+}
+
+.ring-opacity-50 {
+  --tw-ring-opacity: 0.5;
 }
