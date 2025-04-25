@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // API URL from environment variables
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'https://parking-dashboard-frz78g7w3-padmaji-raos-projects.vercel.app/api';
 
 // Get all parking records
 export const getParkingData = async () => {
