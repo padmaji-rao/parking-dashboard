@@ -6,6 +6,8 @@ const API_URL = process.env.REACT_APP_API_URL || 'https://parking-dashboard-frz7
 // Get all parking records
 export const getParkingData = async () => {
   try {
+    console.log("API_URL===> ", API_URL);
+    console.log("FROM ENV ===> ",process.env.REACT_APP_API_URL);
     const response = await axios.get(`${API_URL}/parking`);
     return response.data;
   } catch (error) {
